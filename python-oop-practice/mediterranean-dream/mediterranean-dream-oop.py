@@ -31,13 +31,15 @@ studio.bookroom()
 # 2. exploit inheritance
 
 class Suite(Room):
-    def booksuite(self):
-        print("You can book this " + self.size + " room for $" + str(self.price) + " per night.")
+    pass
+
+    # def booksuite(self):
+    #   print("You can book this " + self.size + " room for $" + str(self.price) + " per night.")
     # should not have to make this method again? inherited from the Room class
 
 
 suite1 = Suite(90, "Suite")
-suite1.booksuite()
+suite1.bookroom()
 
 
 class Shared(Room):
